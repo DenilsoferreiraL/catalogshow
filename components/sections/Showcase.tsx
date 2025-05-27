@@ -9,7 +9,7 @@ export default function Showcase() {
     <section id="showcase" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Showcase() {
           >
             Apresente seu Estoque como Nunca Antes
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,14 +33,14 @@ export default function Showcase() {
             <TabsTrigger value="inventory">Inventário</TabsTrigger>
             <TabsTrigger value="details">Detalhes do Veículo</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="homepage" className="mt-4">
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Exemplo de página inicial da concessionária" 
+                    alt="Exemplo de página inicial da concessionária"
                     className="w-full h-auto object-cover aspect-video"
                   />
                 </div>
@@ -54,13 +54,13 @@ export default function Showcase() {
               </CardContent>
             </Card>
           </TabsContent>
-          
+
           <TabsContent value="inventory" className="mt-4">
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img 
-                    src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  <img
+                    src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="Exemplo de página de inventário"
                     className="w-full h-auto object-cover aspect-video"
                   />
@@ -75,14 +75,14 @@ export default function Showcase() {
               </CardContent>
             </Card>
           </TabsContent>
-          
+
           <TabsContent value="details" className="mt-4">
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img 
-                    src="https://images.pexels.com/photos/10415353/pexels-photo-10415353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                    alt="Exemplo de página de detalhes do veículo" 
+                  <img
+                    src="https://images.pexels.com/photos/10415353/pexels-photo-10415353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Exemplo de página de detalhes do veículo"
                     className="w-full h-auto object-cover aspect-video"
                   />
                 </div>
@@ -100,9 +100,9 @@ export default function Showcase() {
 
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Estes exemplos são baseados em nosso trabalho para clientes como 
+            Estes exemplos são baseados em nosso trabalho para clientes como
             <a href="https://oficial-motors.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium ml-1">
-              Oficial Motors
+              DriveShow
             </a>
           </p>
         </div>

@@ -3,7 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import HeroImage from "../public/hero-image.png";
 
 export default function Hero() {
   const whatsappNumber = "+5563992922509";
@@ -11,10 +13,10 @@ export default function Hero() {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="home" className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+    <section id="home" className="relative pt-20 pb-15 md:pt-40 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-blue-50/80 to-white dark:from-blue-950 dark:via-blue-950/80 dark:to-gray-900 pointer-events-none" />
 
-      <div className="container relative mx-auto px-4 sm:px-6 z-10">
+      <div className="container relative mx-auto px-2 sm:px-6 z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-blue-900 dark:text-blue-100"
@@ -52,6 +54,7 @@ export default function Hero() {
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
+
             <Button
               asChild
               variant="outline"
@@ -71,11 +74,13 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
         >
-          <div className="aspect-[16/9] rounded-xl overflow-hidden shadow-2xl">
-            <img
-              src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          <div className="aspect-[13/9] rounded-xl overflow-hidden shadow-2xl relative">
+            <Image
+              src={HeroImage}
               alt="Showroom moderno de concessionária"
-              className="w-full h-full object-cover"
+              className="object-cover"
+              fill
+              priority
             />
           </div>
 
