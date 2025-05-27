@@ -35,7 +35,7 @@ export default function Showcase() {
           <TabsList className="grid w-full grid-cols-3 mb-8">
             <TabsTrigger value="homepage">Showroom</TabsTrigger>
             <TabsTrigger value="inventory">Estoque</TabsTrigger>
-            <TabsTrigger value="details">Detalhes do Veículo</TabsTrigger>
+            <TabsTrigger value="details">Veículo - Detalhes</TabsTrigger>
           </TabsList>
 
           <TabsContent value="homepage" className="mt-4">
@@ -106,8 +106,8 @@ export default function Showcase() {
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Estes exemplos são baseados em nosso trabalho para clientes como
-            <a href="https://catalogshow.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium ml-1">
-              catalogshow
+            <a href="https://driveshow.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium ml-1">
+              DriveShow
             </a>
           </p>
         </div>
