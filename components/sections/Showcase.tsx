@@ -3,11 +3,10 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
-import showroomImage from "../public/showroom-image.png";
-import stockImage from "../public/stock-image.png";
-import detailImage from "../public/detail-image.png";
-import financeImage from "../public/finance-image.png";
+import showroomImage from "@/public/showroom-image.png";
+import stockImage from "@/public/stock-image.png";
+import detailImage from "@/public/detail-image.png";
+import financeImage from "@/public/finance-image.png";
 import { ExpandableImage } from "../ui/expandable-image";
 
 export default function Showcase() {

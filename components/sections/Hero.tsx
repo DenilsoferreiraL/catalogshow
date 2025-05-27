@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import HeroImage from "../public/hero-image.png";
+import HeroImage from "@/public/hero-image.png";
 
 export default function Hero() {
   const whatsappNumber = "+5563992922509";
