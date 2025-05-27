@@ -7,6 +7,8 @@ import Image from "next/image";
 import showroomImage from "../public/showroom-image.png";
 import stockImage from "../public/stock-image.png";
 import detailImage from "../public/detail-image.png";
+import financeImage from "../public/finance-image.png";
+import { ExpandableImage } from "../ui/expandable-image";
 
 export default function Showcase() {
   return (
@@ -32,22 +34,19 @@ export default function Showcase() {
         </div>
 
         <Tabs defaultValue="homepage" className="w-full max-w-6xl mx-auto">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="homepage">Showroom</TabsTrigger>
             <TabsTrigger value="inventory">Estoque</TabsTrigger>
-            <TabsTrigger value="details">Veículo - Detalhes</TabsTrigger>
+            <TabsTrigger value="details">Detalhes</TabsTrigger>
+            <TabsTrigger value="finance">Simulação</TabsTrigger>
           </TabsList>
 
           <TabsContent value="homepage" className="mt-4">
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <Image
-                    src={showroomImage}
-                    alt="Showroom moderno de concessionária"
-                    className="object-cover"
-                    priority
-                  />
+                  <ExpandableImage src={showroomImage} alt="Showroom moderno de concessionária" />
+
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-3">Showroom</h3>
@@ -63,12 +62,7 @@ export default function Showcase() {
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <Image
-                    src={stockImage}
-                    alt="Showroom moderno de concessionária"
-                    className="object-cover"
-                    priority
-                  />
+                  <ExpandableImage src={stockImage} alt="Estoque" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">Estoque Dinâmico e Personalizado</h3>
@@ -84,12 +78,7 @@ export default function Showcase() {
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <Image
-                    src={detailImage}
-                    alt="Showroom moderno de concessionária"
-                    className="object-cover"
-                    priority
-                  />
+                  <ExpandableImage src={detailImage} alt="Detalhes do veículo" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">Informações Detalhadas do Veículo</h3>
@@ -97,6 +86,25 @@ export default function Showcase() {
                     Páginas de detalhes do veículo que destacam especificações, recursos e múltiplas imagens de alta qualidade.
                     Opções de contato direto permitem que compradores interessados entrem em contato imediatamente.
                   </p>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="finance" className="mt-4">
+            <Card>
+              <CardContent className="p-0">
+                <div className="overflow-hidden rounded-lg border border-borde">
+                  <ExpandableImage src={financeImage} alt="Modelo de financiamento" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-3">Simule seu Financiamento</h3>
+                  <p className="text-muted-foreground">
+                    Página dedicada para simular e solicitar o financiamento do veículo.
+                    Ajuste valores de entrada, prazo e visualize parcelas estimadas com base em taxas e condições aproximadas de mercado.
+                    A simulação é rápida, transparente e facilita a tomada de decisão.
+                  </p>
+
                 </div>
               </CardContent>
             </Card>

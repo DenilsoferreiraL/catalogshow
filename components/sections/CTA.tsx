@@ -31,7 +31,7 @@ export default function CTA() {
     if (inView) {
       setOdometerValues({
         concessionarias: 37,
-        aumento: 42,
+        aumento: 62,
         veiculos: 537
       });
     }
