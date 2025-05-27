@@ -3,10 +3,14 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
+import showroomImage from "../public/showroom-image.png";
+import stockImage from "../public/stock-image.png";
+import detailImage from "../public/detail-image.png";
 
 export default function Showcase() {
   return (
-    <section id="showcase" className="py-16 md:py-24 bg-card">
+    <section id="showcase" className="py-10 md:py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <motion.h2
@@ -18,7 +22,7 @@ export default function Showcase() {
             Apresente seu Estoque como Nunca Antes
           </motion.h2>
           <motion.p
-            className="text-xl text-muted-foreground max-w-2xl mx-auto"
+            className=" text-xl text-muted-foreground max-w-2xl mx-auto "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -27,10 +31,10 @@ export default function Showcase() {
           </motion.p>
         </div>
 
-        <Tabs defaultValue="homepage" className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="homepage" className="w-full max-w-6xl mx-auto">
           <TabsList className="grid w-full grid-cols-3 mb-8">
-            <TabsTrigger value="homepage">Página Inicial</TabsTrigger>
-            <TabsTrigger value="inventory">Inventário</TabsTrigger>
+            <TabsTrigger value="homepage">Showroom</TabsTrigger>
+            <TabsTrigger value="inventory">Estoque</TabsTrigger>
             <TabsTrigger value="details">Detalhes do Veículo</TabsTrigger>
           </TabsList>
 
@@ -38,17 +42,17 @@ export default function Showcase() {
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img
-                    src="https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Exemplo de página inicial da concessionária"
-                    className="w-full h-auto object-cover aspect-video"
+                  <Image
+                    src={showroomImage}
+                    alt="Showroom moderno de concessionária"
+                    className="object-cover"
+                    priority
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">Design Profissional da Página Inicial</h3>
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-3">Showroom</h3>
                   <p className="text-muted-foreground">
-                    Nossas páginas iniciais criam uma forte primeira impressão com os clientes potenciais.
-                    Layouts limpos, imagens profissionais e chamadas para ação claras guiam os visitantes para explorar seu inventário.
+                    Apresente seus veículos em um ambiente digital elegante e envolvente. Nosso showroom virtual destaca cada detalhe com imagens de alta qualidade e um design moderno, criando uma experiência que encanta e conquista seus clientes desde o primeiro clique.
                   </p>
                 </div>
               </CardContent>
@@ -59,17 +63,17 @@ export default function Showcase() {
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img
-                    src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Exemplo de página de inventário"
-                    className="w-full h-auto object-cover aspect-video"
+                  <Image
+                    src={stockImage}
+                    alt="Showroom moderno de concessionária"
+                    className="object-cover"
+                    priority
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">Exibição Organizada do Inventário</h3>
+                  <h3 className="text-xl font-semibold mb-3">Estoque Dinâmico e Personalizado</h3>
                   <p className="text-muted-foreground">
-                    Apresente todo seu inventário com opções avançadas de filtragem.
-                    Os clientes podem facilmente navegar por marca, modelo, ano, faixa de preço e mais para encontrar o veículo perfeito.
+                    Navegue por um catálogo inteligente que se adapta às preferências do cliente. Filtros avançados facilitam a busca por marca, modelo, ano e preço, tornando a experiência ágil e personalizada.
                   </p>
                 </div>
               </CardContent>
@@ -80,10 +84,11 @@ export default function Showcase() {
             <Card>
               <CardContent className="p-0">
                 <div className="overflow-hidden rounded-lg border border-border">
-                  <img
-                    src="https://images.pexels.com/photos/10415353/pexels-photo-10415353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Exemplo de página de detalhes do veículo"
-                    className="w-full h-auto object-cover aspect-video"
+                  <Image
+                    src={detailImage}
+                    alt="Showroom moderno de concessionária"
+                    className="object-cover"
+                    priority
                   />
                 </div>
                 <div className="p-6">
@@ -101,8 +106,8 @@ export default function Showcase() {
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Estes exemplos são baseados em nosso trabalho para clientes como
-            <a href="https://oficial-motors.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium ml-1">
-              DriveShow
+            <a href="https://catalogshow.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium ml-1">
+              catalogshow
             </a>
           </p>
         </div>

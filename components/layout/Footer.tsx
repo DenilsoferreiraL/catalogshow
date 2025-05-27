@@ -1,4 +1,4 @@
-import { Car, Mail, Phone, MapPin } from "lucide-react";
+import { CarTaxiFront, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -14,8 +14,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="#home" className="flex items-center gap-2">
-              <Car className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">DriveShow</span>
+              <CarTaxiFront className="h-6 w-6 text-primary" />
+              <span className="text-xl font-bold">catalogshow</span>
             </Link>
             <p className="text-muted-foreground">
               Soluções digitais profissionais criadas especialmente para concessionárias.
@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-muted-foreground" />
-                <span className="text-muted-foreground">contato@DriveShow.com</span>
+                <span className="text-muted-foreground">contato@catalogshow.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-muted-foreground mt-1" />
@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} DriveShow. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} catalogshow. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">

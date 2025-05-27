@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Car } from "lucide-react";
+import { CarTaxiFront } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
@@ -32,8 +32,8 @@ export default function Navbar() {
     )}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         <Link href="#home" className="flex items-center gap-2">
-          <Car className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold">DriveShow</span>
+          <CarTaxiFront className="h-8 w-8 text-primary" />
+          <span className="text-xl font-bold">CatalogShow</span>
         </Link>
         <nav className="hidden md:flex space-x-6 items-center">
           <Link
