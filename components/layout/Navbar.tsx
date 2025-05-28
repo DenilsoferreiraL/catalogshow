@@ -8,10 +8,6 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
 
-  const whatsappNumber = "5563992922509";
-  const whatsappMessage = "Olá, gostaria de saber mais sobre as soluções digitais para concessionárias que vocês oferecem.";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
@@ -31,31 +27,52 @@ export default function Navbar() {
         : "bg-transparent"
     )}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
-        <Link href="#home" className="flex items-center gap-2">
-          <CarTaxiFront className="h-8 w-8 text-primary" />
+        <button
+          onClick={() => {
+            const section = document.getElementById('home');
+            section?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="flex items-center gap-2">
+          <CarTaxiFront
+            className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold">CatalogShow</span>
-        </Link>
+        </button>
         <nav className="hidden md:flex space-x-6 items-center">
-          <Link
-            href="#features"
+          <button
+            onClick={() => {
+              document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="text-foreground/90 hover:text-foreground transition-colors"
           >
             Recursos
-          </Link>
-          <Link
-            href="#benefits"
+          </button>
+
+          <button
+            onClick={() => {
+              document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="text-foreground/90 hover:text-foreground transition-colors"
           >
             Benefícios
-          </Link>
-          <Link
-            href="#showcase"
+          </button>
+
+          <button
+            onClick={() => {
+              document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="text-foreground/90 hover:text-foreground transition-colors"
           >
             Destaques
-          </Link>
+          </button>
+
           <Button asChild variant="default">
-            <Link href="#contact">Comece Agora</Link>
+            <button
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Comece Agora
+            </button>
           </Button>
         </nav>
 

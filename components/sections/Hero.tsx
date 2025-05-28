@@ -61,9 +61,14 @@ export default function Hero() {
               size="lg"
               className="rounded-full px-8 border-blue-200 hover:bg-blue-50 dark:border-blue-800 dark:hover:bg-blue-900/50"
             >
-              <Link href="#showcase">
+              <button
+                onClick={() => {
+                  const section = document.getElementById('showcase');
+                  section?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Ver Demonstração
-              </Link>
+              </button>
             </Button>
           </motion.div>
         </div>
