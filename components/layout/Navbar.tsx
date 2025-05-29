@@ -38,7 +38,7 @@ export default function Navbar() {
             aria-label="Ir para home"
           >
             <CarTaxiFront className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold select-none">CatalogShow</span>
+            <span className="text-xl font-bold select-none ">CatalogShow</span>
           </button>
 
           {/* Desktop nav */}
@@ -114,7 +114,7 @@ export default function Navbar() {
           >
             Recursos
           </button>
-          <Button asChild variant="default" className="mt-2 font-semibold">
+          <Button asChild variant="default" className="mt-2 font-semibold ">
             <button
               onClick={() => handleScrollTo("contact")}
               className="w-full focus:outline-none text-base"

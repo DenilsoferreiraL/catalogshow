@@ -6,7 +6,7 @@ import { Globe, ShieldCheck, BarChart, Search, Smartphone, DollarSign } from "lu
 
 const benefits = [
   {
-    icon: <Globe className="h-12 w-12 text-blue-600 dark:text-blue-400" />,
+    icon: <Globe className="h-12 w-12 text-blue-600 dark:text-blue-400 " />,
     title: "Presença Online Única e Impactante",
     description:
       "Destaque sua concessionária com um site profissional que traduz a identidade da sua marca, construindo uma imagem sólida e diferenciada no mercado digital."
@@ -70,7 +70,7 @@ export default function Benefits() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold mb-4 text-blue-900 dark:text-blue-100"
+            className="text-4xl md:text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground dark:text-blue-100"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

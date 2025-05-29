@@ -19,13 +19,13 @@ export default function Hero() {
       <div className="container relative mx-auto px-2 sm:px-6 z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight mb-6 text-blue-900 dark:text-blue-100"
+            className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             Revolucione sua Concessionária com
-            <span className="text-blue-600 dark:text-blue-400"> Presença Digital</span>
+            <span className="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground "> Presença Digital</span>
           </motion.h1>
 
           <motion.p
@@ -47,7 +47,7 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+              className="rounded-full px-8 bg-gradient-to-r from-primary to-foreground"
             >
               <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 Comece Agora
@@ -95,10 +95,10 @@ export default function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
-            <p className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Nossos clientes relatam:</p>
+            <p className="font-semibold mb-2 text-blue-700/80 dark:text-blue-100">Nossos clientes relatam:</p>
             <div className="flex items-center gap-2 text-sm">
               <span className="text-green-500 font-bold text-lg">+35%</span>
-              <span className="text-blue-600/80 dark:text-blue-400/80">em conversão de leads</span>
+              <span className="text-green-500 dark:text-blue-400/80">em conversão de leads</span>
             </div>
           </motion.div>
         </motion.div>

@@ -27,7 +27,7 @@ export default function TermosPage() {
           <h1 className="text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">
             Termos de Uso
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-blue-700/80 max-w-2xl mx-auto">
             Regras que garantem uma experiência segura e justa na criação e entrega dos seus projetos.
           </p>
         </div>

@@ -53,7 +53,7 @@ export default function CTA() {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-blue-900 dark:text-blue-100"
+            className="text-3xl md:text-4xl lg:text-5xl text-blue-900 dark:text-blue-100 font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

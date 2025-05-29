@@ -15,7 +15,7 @@ export default function Showcase() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-4xl md:text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ export default function Showcase() {
             Apresente seu Estoque como Nunca Antes
           </motion.h2>
           <motion.p
-            className=" text-xl text-muted-foreground max-w-2xl mx-auto "
+            className=" text-xl max-w-2xl mx-auto text-blue-700/80 "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
