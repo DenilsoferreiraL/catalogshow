@@ -62,7 +62,7 @@ export default function CTA() {
           </motion.h2>
 
           <motion.p
-            className="text-xl text-blue-700/80 dark:text-blue-300/80 mb-8 md:mb-10"
+            className="text-xl text-blue-700 dark:text-blue-300/80 mb-8 md:mb-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

@@ -78,7 +78,7 @@ export default function Benefits() {
             Por que Nossa Plataforma é a Escolha Certa para sua Concessionária?
           </motion.h2>
           <motion.p
-            className="text-xl text-blue-700/80 dark:text-blue-300/80 max-w-2xl mx-auto"
+            className="text-xl text-blue-700 dark:text-blue-300/80 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -101,7 +101,7 @@ export default function Benefits() {
                   <CardTitle className="text-xl text-blue-900 dark:text-blue-100">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-blue-600/80 dark:text-blue-400/80">{benefit.description}</p>
+                  <p className="text-blue-800 dark:text-blue-700">{benefit.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -114,7 +114,7 @@ export default function Benefits() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <blockquote className="italic text-blue-700/80 dark:text-blue-300/80 text-lg">
+          <blockquote className="italic text-blue-700 dark:text-blue-300/80 text-lg">
             {"Desde que implementamos esta solução digital, nossos leads aumentaram em 35% e nossa equipe de vendas pode focar em fechar negócios ao invés de responder perguntas básicas sobre o estoque."}
           </blockquote>
         </motion.div>
