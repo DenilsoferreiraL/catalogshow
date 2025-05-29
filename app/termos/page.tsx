@@ -24,7 +24,7 @@ export default function TermosPage() {
             <FileText className="h-6 w-6 text-primary mr-2" />
             <span className="font-medium text-primary">Transparência e Compromisso</span>
           </div>
-          <h1 className="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">
+          <h1 className="text-4xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">
             Termos de Uso
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

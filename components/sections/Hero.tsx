@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="container relative mx-auto px-2 sm:px-6 z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-blue-900 dark:text-blue-100"
+            className="text-4xl md:text-5xl lg:text-5xl font-bold tracking-tight mb-6 text-blue-900 dark:text-blue-100"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-xl md:text-2xl text-blue-700/80 dark:text-blue-300/80 mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-1xl text-blue-700/80 dark:text-blue-300/80 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

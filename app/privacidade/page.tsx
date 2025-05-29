@@ -18,7 +18,7 @@ export default function PoliticaPrivacidadePage() {
       <NavbarRoute />
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Cabeçalho Impactante */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center bg-primary/10 px-6 py-3 rounded-full mb-4">
             <ShieldCheck className="h-6 w-6 text-primary mr-2" />
             <span className="font-medium text-primary">Seus dados estão seguros</span>
