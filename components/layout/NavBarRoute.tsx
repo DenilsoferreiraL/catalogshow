@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { CarTaxiFront } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export default function Navbar() {
+export default function NavbarRoute() {
 
   const [isScrolled, setIsScrolled] = React.useState(false);
 
@@ -37,41 +37,12 @@ export default function Navbar() {
           <span className="text-xl font-bold">CatalogShow</span>
         </button>
         <nav className="hidden md:flex space-x-6 items-center">
-          <button
-            onClick={() => {
-              document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="text-foreground/90 hover:text-foreground transition-colors"
-          >
-            Recursos
-          </button>
-
-          <button
-            onClick={() => {
-              document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="text-foreground/90 hover:text-foreground transition-colors"
-          >
-            Benefícios
-          </button>
-
-          <button
-            onClick={() => {
-              document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="text-foreground/90 hover:text-foreground transition-colors"
-          >
-            Destaques
-          </button>
-
           <Button asChild variant="default">
-            <button
-              onClick={() => {
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <a
+              href="https://catalogshow.vercel.app/"
             >
-              Comece Agora
-            </button>
+              Início
+            </a>
           </Button>
         </nav>
 

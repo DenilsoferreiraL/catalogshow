@@ -243,14 +243,14 @@ export default function Footer() {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link
-              href="#"
+              href="/privacidade"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Ver Política de Privacidade"
             >
               Política de Privacidade
             </Link>
             <Link
-              href="#"
+              href="/termos"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Ver Termos de Serviço"
             >
