@@ -19,13 +19,17 @@ export default function Hero() {
       <div className="container relative mx-auto px-2 sm:px-6 z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground "
+            className=" py-3 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.2] tracking-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Revolucione sua Concessionária com
-            <span className="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground "> Presença Digital</span>
+            Revolucione sua <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">Concessionária</span>
+            <br />
+            com{' '}
+            <span className="inline-block bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-primary to-foreground">
+              Presença Digital
+            </span>
           </motion.h1>
 
           <motion.p
