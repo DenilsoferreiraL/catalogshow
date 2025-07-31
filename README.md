@@ -37,8 +37,6 @@ Seção explicativa sobre os diferenciais competitivos do DriveShow. Ideal para 
 - Navegação fluida e responsiva  
 - Apresentação clara do produto (texto + imagem + animação)  
 - Blocos de informações com CTA (Call-to-Action)  
-- Depoimentos e diferenciais  
-- Integração com mapas e links externos  
 - Otimização para SEO e carregamento rápido  
 
 ---
@@ -60,21 +58,20 @@ Seção explicativa sobre os diferenciais competitivos do DriveShow. Ideal para 
 - `AboutSection`: Explicação sobre o DriveShow  
 - `DemoSection`: Demonstração do sistema em ação  
 - `BenefitsSection`: Vantagens e diferenciais  
-- `TestimonialSection`: Depoimentos (opcional)  
 - `Footer`: Contato, redes sociais, e link para acessar o catálogo
 
 ---
 
 ## 🌐 Acesse o projeto online
 
-🔗 [Clique aqui para acessar a landing page](https://seulink.vercel.app)
+🔗 [Clique aqui para acessar a landing page](https://catalogshow.vercel.app/)
 
 ---
 
 ## 📂 Como rodar localmente
 
 ```bash
-git clone https://github.com/seunome/catalogshow.git
+git clone https://github.com/DenilsoferreiraL/catalogshow.git
 cd catalogshow
 npm install
 npm run dev
